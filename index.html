@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<body>
+    <img id="main" onclick="sample()">
+    <div id="div1"></div>
+    <button id="id1" onclick="sports()">Sports</button>
+    <button id="id2" onclick="movies()">Movies</button>
+    <button id="id3" onclick="dance()">Classical Dance</button>
+    <div id="div2"></div>
+</body>
+<script>
+    let div1=document.getElementById("div1")
+    div1.innerHTML="<h1><b>Onclick Event in JavaScript</b></h1>";
+    div1.style.height="60px";
+    div1.style.width="460px";
+    div1.style.color="white";
+    div1.style.backgroundColor="crimson";
+    div1.style.textAlign="center";
+    div1.style.marginTop="100px";
+    div1.style.marginLeft="500px"
+    
+    let but1=document.getElementById("id1")
+    but1.style.height="40px";
+    but1.style.width="110px";
+    but1.style.marginLeft="500px"
+
+    let but2=document.getElementById("id2")
+    but2.style.height="40px";
+    but2.style.width="130px";
+
+    let but3=document.getElementById("id3")
+    but3.style.height="40px";
+    but3.style.width="212px";
+
+    let div2=document.getElementById("div2")
+    div2.style.height="20px";
+    div2.style.width="460px";
+    div2.style.backgroundColor="crimson";
+    div2.style.marginLeft="500px"
+    
+    
+    let img=document.getElementById("main");
+
+    function sports(){
+        main.style.height="365px";
+        main.style.width="400px";
+        main.style.background="url(../images/sports.webp)";
+        main.style.backgroundSize="400px"
+        main.style.backgroundRepeat="no-repeat"
+        main.style.backgroundPosition="center"
+        main.style.padding="40px";
+        main.style.backgroundColor="red";
+        main.style.marginLeft="500px";
+    }
+    function movies(){
+        main.style.height="265px";
+        main.style.width="400px";
+        main.style.background="url(../images/movies.png)";
+        main.style.backgroundSize="400px";
+        main.style.backgroundRepeat="no-repeat";
+        main.style.backgroundPosition="center"
+        main.style.padding="40px";
+        main.style.backgroundColor="purple"
+    }
+    function dance(){
+        main.style.height="284px";
+        main.style.width="400px";
+        main.style.background="url(../images/dance.jpg)";
+        main.style.backgroundSize="400px";
+        main.style.backgroundRepeat="no-repeat";
+        main.style.backgroundPosition="center"
+        main.style.padding="40px";
+        main.style.backgroundColor="yellow"
+    }
+</script>
+</html>
